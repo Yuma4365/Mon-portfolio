@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Acceuil {
+    background-color: #ffffff;
+}
+#site-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #34495e;
+    color: white; 
+}
+
+.left h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #03b5a4; 
+}
+
+nav.right ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.right ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: small;
+    background-color: transparent;
+    border-color: #34495e;
+}
+
+.nom, .yuma {
+    color: #03b5a4;
+}
+
+.content {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    gap: 90px;
+    padding: 70px;
+}
+
+p {
+    max-width: 1000px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.image {
+    width: 300px; 
+    height: auto; 
+    border: none; 
+  }
+
+#Apropos {
+    background-color: #f5f5f5;
+}
+    .titre {
+    padding: 10px;
+    text-align: center;
+    color: #03b5a4;
+    margin-top: 10px;
+    }
+    .description {
+      display: flex;
+      align-items: left; 
+      justify-content: flex-start; 
+      gap: 100px; 
+      padding: 10px;
+      line-height: 2;
+    }
+p1{
+    margin-bottom: 20px; 
+    line-height: 2; 
+    font-size: 1.2rem; 
+    text-align: justify;
+    flex: 1;
+    padding: 10px;
+    max-width: 700px; 
+}
+a {
+    background-color: #03b5a4;
+    border: #03b5a4 5px solid;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f5f5f5;
+    line-height: 4;
+  }
+  
+  img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    border: 5px solid #03b5a4; 
+    object-position: center;
+    object-fit: cover; 
+  }
+
+#Monprojet {background-color: #ffffff;
+    }
+    .projet{
+        padding: 10px;
+        text-align: center;
+        color: #03b5a4;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .projects {
+        background-color: #ffffff; 
+        padding: 40px; 
+      }  
+      .project-card {
+        background-color: #f5f5f5; 
+        border-radius: 10px; 
+        padding: 20px; 
+        margin: 20px auto; 
+        max-width: 350px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: auto;
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      .project-description {
+        color: #000000;
+        font-size: 1.1rem; 
+        margin-bottom: 10px; 
+      }
+      
+      .view-pdf-button {
+        display: inline-block;
+        background-color: #03b5a4; 
+        color: white;
+        border: none;
+        border-radius: 5px; 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        cursor: pointer; 
+        text-decoration: none;
+        margin-top: 30px;
+      }
+      
+#Mescompetences{background-color: #f5f5f5;
+        font-family: Arial, sans-serif; 
+        }
+    .competence {
+        padding: 10px;
+        text-align: center;
+        color: #03b5a4;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        #couleur{
+            font-size: 24px;
+        margin-bottom: 35px;
+        color: #000000;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 200px;
+            margin-top: 20px;
+    }
+        .skills-box {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            margin-bottom: 70px;
+        }
+        .skill {
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .skill-name {
+            font-weight: normal;
+            margin-bottom: 5px;
+            text-align: left;
+            font-size: 15px;
+
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #03b5a4;
+            border-radius: 5px;
+        } 
+
+#contact {
+            background-color: #1a1a1a;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .contain {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: white;
+        }
+        
+        .highlight {
+            color: #03b5a4;
+            font-weight: bold;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #03b5a4;
+            align-items: center;
+        }
+        
+        .input-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 5000px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        
+        button {
+            background-color: #03b5a4;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #02a093;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            font-size: 12px;
+            height: 10px;
+            color: rgb(0, 0, 0);
+            position: fixed;
+            bottom: 0;
+            width: 98%;
+        }
+            .droite{
+                text-align: left;
+            }
+            .gauche{
+                text-align: right;
+            }  
