@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yuma Telemaque : Pharmacienne, Analyste de données et Développeuse web.">
+    <meta name="keywords" content="pharmacienne, analyste de données, développement web, HTML, CSS, JavaScript">
+    <meta name="author" content="Yuma Telemaque">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +18,7 @@
             </div>
             <nav class="right">
                 <ul>
-                    <li><a href="#Acceuil">Accueil</a></li>
+                    <li><a href="#Acceuil">Acceuil</a></li>
                     <li><a href="#Apropos">À propos</a></li>
                     <li><a href="#Monprojet">Projet</a></li>
                     <li><a href="#Mescompetences">Compétences</a></li>
@@ -34,13 +37,13 @@
     <section id="Apropos">   
             <h1 class="titre">À propos</h1>
         <div class="description">
-            <p1>Passionnée par l’analyse de données, je maîtrise la gestion, le traitement et l’interprétation des données.
+            <p>Passionnée par l’analyse de données, je maîtrise la gestion, le traitement et l’interprétation des données.
                 En tant qu’étudiante en développement web, je perfectionne mes compétences en JavaScript, HTML et CSS.
                 Je m’engage à optimiser les bases de données et à renforcer les infrastructures informatiques dans un environnement 
                 dynamique.<br>
                 <a href="CV_Yuma_Telemaque.pdf" download>Télécharger mon CV</a>
-            </p1>
-            <img src="image3.jpg" alt="Photo">
+            </p>
+            <img src="image3.jpg" alt="Portrait de Yuma Telemaque, analyste de données et développeuse web en formation.">
         </div>
     </section>
 
@@ -113,20 +116,25 @@
             </form>
             <script>
                 document.getElementById("contactForm").addEventListener("submit", function(event) {
-                    event.preventDefault();
-    
-                    let prenom = document.getElementById("prenom").value;
-                    let nom = document.getElementById("nom").value;
-                    let sujet = document.getElementById("sujet").value;
-                    let message = document.getElementById("message").value;
-    
-                    if (prenom && nom && sujet && message) {
-                        alert("Message envoyé avec succès !");
-                        this.reset();
-                    } else {
-                        alert("Veuillez remplir tous les champs.");
-                    }
-                });
+    event.preventDefault();
+    let fields = ["prenom", "nom", "sujet", "message"];
+    let valid = true;
+    fields.forEach(function(field) {
+        let input = document.getElementById(field);
+        if (!input.value.trim()) {
+            input.style.border = "2px solid red";
+            valid = false;
+        } else {
+            input.style.border = "2px solid #03b5a4";
+        }
+    });
+    if (valid) {
+        alert("Message envoyé avec succès !");
+        this.reset();
+    } else {
+        alert("Veuillez remplir tous les champs correctement.");
+    }
+    });
             </script>
         </div>
         <footer>
