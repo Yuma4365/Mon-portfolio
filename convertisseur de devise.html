@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Devise</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+        button {
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Convertisseur de Devise</h2>
+        <input type="number" id="amount" placeholder="Montant">
+        
+        <label>De :</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="HTG">HTG</option>
+        </select>
+
+        <label>À :</label>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="HTG">HTG</option>
+        </select>
+
+        <button onclick="convertCurrency()">Convertir</button>
+        
+        <h3>Résultat: <span id="result">0</span></h3>
+    </div>
+
+    <script>
+        function convertCurrency() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            let fromCurrency = document.getElementById("fromCurrency").value;
+            let toCurrency = document.getElementById("toCurrency").value;
+
+            let exchangeRates = {
+                USD: { EUR: 0.92, HTG: 135 },
+                EUR: { USD: 1.09, HTG: 147 },
+                HTG: { USD: 0.0074, EUR: 0.0068 }
+            };
+
+            if (fromCurrency === toCurrency) {
+                document.getElementById("result").innerText = amount.toFixed(2);
+            } else {
+                let rate = exchangeRates[fromCurrency][toCurrency];
+                let convertedAmount = amount * rate;
+                document.getElementById("result").innerText = convertedAmount.toFixed(2);
+            }
+        }
+    </script>
+</body>
+</html>

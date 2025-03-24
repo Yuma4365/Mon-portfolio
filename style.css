@@ -32,13 +32,12 @@ nav.right ul {
 
 nav.right ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: small;
     background-color: transparent;
     border-color: #34495e;
 }
-
 .nom, .yuma {
     color: #03b5a4;
 }
@@ -108,49 +107,69 @@ a {
     object-fit: cover; 
   }
 
-#Monprojet {background-color: #ffffff;
-    }
-    .projet{
-        padding: 10px;
-        text-align: center;
-        color: #03b5a4;
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-    .projects {
-        background-color: #ffffff; 
-        padding: 40px; 
-      }  
-      .project-card {
-        background-color: #f5f5f5; 
-        border-radius: 10px; 
-        padding: 20px; 
-        margin: 20px auto; 
-        max-width: 350px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: auto;
-        text-align: center;
-        margin-top: 10px;
-      }
-      
-      .project-description {
-        color: #000000;
-        font-size: 1.1rem; 
-        margin-bottom: 10px; 
-      }
-      
-      .view-pdf-button {
-        display: inline-block;
-        background-color: #03b5a4; 
-        color: white;
-        border: none;
-        border-radius: 5px; 
-        padding: 10px 20px; 
-        font-size: 1rem; 
-        cursor: pointer; 
-        text-decoration: none;
-        margin-top: 30px;
-      }
+#Monprojet {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.projet {
+    color: #03b5a4;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #f5f5f5; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-description {
+    color: #000000;
+    font-size: 1.1rem; 
+    margin-bottom: 50px; 
+}
+
+.project-tags {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.view-button {
+    display: inline-block;
+    background-color: #03b5a4; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    width: 120px;
+    height: 40px;
+    font-size: 1rem; 
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer; 
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-button:hover {
+    background-color: #028a81;
+}
+
+
       
 #Mescompetences{background-color: #f5f5f5;
         font-family: Arial, sans-serif; 

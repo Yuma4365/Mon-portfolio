@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronomètre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        #start { background: green; color: white; }
+        #pause { background: orange; color: white; }
+        #reset { background: red; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chronomètre</h1>
+        <p id="timer">00:00:00</p>
+        <button id="start">Démarrer</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Réinitialiser</button>
+    </div>
+
+    <script>
+        let timerDisplay = document.getElementById("timer");
+        let startBtn = document.getElementById("start");
+        let pauseBtn = document.getElementById("pause");
+        let resetBtn = document.getElementById("reset");
+
+        let timer;
+        let seconds = 0;
+        let running = false;
+
+        function updateDisplay() {
+            let hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+            let mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+            let secs = String(seconds % 60).padStart(2, '0');
+            timerDisplay.innerText = `${hrs}:${mins}:${secs}`;
+        }
+
+        startBtn.addEventListener("click", () => {
+            if (!running) {
+                running = true;
+                timer = setInterval(() => {
+                    seconds++;
+                    updateDisplay();
+                }, 1000);
+            }
+        });
+
+        pauseBtn.addEventListener("click", () => {
+            running = false;
+            clearInterval(timer);
+        });
+
+        resetBtn.addEventListener("click", () => {
+            running = false;
+            clearInterval(timer);
+            seconds = 0;
+            updateDisplay();
+        });
+    </script>
+</body>
+</html>
+
