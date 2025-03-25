@@ -28,7 +28,7 @@
         <div class="content">
             <p>Je suis <span class="yuma">Yuma</span>, Pharmacienne, Analyste de données et 
                 Développeuse en devenir passionnée par le web et le design !</p>
-            <img class="image" src="image.jpg" alt="Portrait">
+            <img class="image" src="images/image.jpg" alt="Portrait">
         </div>
     </section>
     
@@ -39,9 +39,9 @@
                 En tant qu’étudiante en développement web, je perfectionne mes compétences en JavaScript, HTML et CSS.
                 Je m’engage à optimiser les bases de données et à renforcer les infrastructures informatiques dans un environnement 
                 dynamique.<br>
-                <a href="CV_Yuma_Telemaque.pdf" download>Télécharger mon CV</a>
+                <a href="cv/CV_Yuma_Telemaque.pdf" download>Télécharger mon CV</a>
             </p1>
-            <img src="image3.jpg" alt="Portrait de Yuma Telemaque, analyste de données et développeuse web en formation.">
+            <img src="images/image3.jpg" alt="Portrait de Yuma Telemaque, analyste de données et développeuse web en formation.">
         </div>
     </section>
 
@@ -124,34 +124,12 @@
                 <textarea id="message" placeholder="Écrivez votre message ici !"></textarea>
                 <button type="submit">Envoyer</button>
             </form>
-            <script>
-                document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    let fields = ["prenom", "nom", "sujet", "message"];
-    let valid = true;
-    fields.forEach(function(field) {
-        let input = document.getElementById(field);
-        if (!input.value.trim()) {
-            input.style.border = "2px solid red";
-            valid = false;
-        } else {
-            input.style.border = "2px solid #03b5a4";
-        }
-    });
-    if (valid) {
-        alert("Message envoyé avec succès !");
-        this.reset();
-    } else {
-        alert("Veuillez remplir tous les champs correctement.");
-    }
-    });
-            </script>
         </div>
         <footer>
             <div class="droite">Designed by <span class="highlight">YUMA TELEMAQUE</span> with HTML, CSS, JS</div>
             <div class="gauche">Tous droits réservés - 2025</div>
         </footer>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
