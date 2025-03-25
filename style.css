@@ -1,5 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    max-width: 1440px;
+    margin: auto;
 }
 #Acceuil {
     background-color: #ffffff;
@@ -32,11 +49,7 @@ nav.right ul {
 
 nav.right ul li a {
     text-decoration: none;
-<<<<<<< HEAD
-    color: rgb(255, 255, 255);
-=======
     color: white;
->>>>>>> e1b12c7a42122f3960e6d6a509099a1adff96434
     font-weight: bold;
     font-size: small;
     background-color: transparent;
@@ -111,7 +124,6 @@ a {
     object-fit: cover; 
   }
 
-<<<<<<< HEAD
 #Monprojet {
     background-color: #ffffff;
     text-align: center;
@@ -176,7 +188,6 @@ a {
 
 
       
-=======
 #Monprojet {background-color: #ffffff;
     }
     .projet{
@@ -221,7 +232,6 @@ a {
         margin-top: 30px;
       }
     
->>>>>>> e1b12c7a42122f3960e6d6a509099a1adff96434
 #Mescompetences{background-color: #f5f5f5;
         font-family: Arial, sans-serif; 
         }
